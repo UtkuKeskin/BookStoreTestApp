@@ -1,0 +1,16 @@
+# Backend
+BookStoreTestApp.Backend/bin/
+BookStoreTestApp.Backend/obj/
+.vs/
+*.user
+*.suo
+
+# Frontend
+bookstore-frontend/node_modules/
+bookstore-frontend/build/
+bookstore-frontend/.env
+
+# General
+*.log
+.DS_Store
+.vscode/
