@@ -1,16 +1,30 @@
-# Backend
+# ─────────────────────
+#  .NET / C# Backend
+# ─────────────────────
 BookStoreTestApp.Backend/bin/
 BookStoreTestApp.Backend/obj/
-.vs/
-*.user
-*.suo
+BookStoreTestApp.Backend/.vs/
+BookStoreTestApp.Backend/*.user
+BookStoreTestApp.Backend/*.suo
+BookStoreTestApp.Backend/appsettings.Development.json
 
-# Frontend
+# ─────────────────────
+#  Vite / React Frontend
+# ─────────────────────
 bookstore-frontend/node_modules/
-bookstore-frontend/build/
+bookstore-frontend/dist/
 bookstore-frontend/.env
+bookstore-frontend/.env.*.local
+bookstore-frontend/.vite/
+bookstore-frontend/.cache/
+bookstore-frontend/.DS_Store
 
-# General
+# ─────────────────────
+#  General
+# ─────────────────────
 *.log
+*.bak
+~*.tmp
 .DS_Store
+Thumbs.db
 .vscode/
