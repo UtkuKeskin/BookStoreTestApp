@@ -16,9 +16,10 @@ builder.Services.AddCors(options =>
         {
             policy.WithOrigins(
                 "http://localhost:3000",
-                "https://bookstore-test-lmnrszjtn-utku-keskins-projects.vercel.app",
+                "https://bookstore-test-app.vercel.app",
+                "https://bookstore-test-app-*.vercel.app",
                 "https://*.vercel.app"
-             )
+            )
             .AllowAnyMethod()
             .AllowAnyHeader();
         });
