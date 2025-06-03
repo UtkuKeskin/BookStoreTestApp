@@ -14,9 +14,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
+            policy.WithOrigins(
+                "http://localhost:3000",
+                "https://bookstore-test-app.vercel.app", // Vercel domain'inizi ekleyin
+                "https://*.vercel.app" // Tüm Vercel preview deployments
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader();
         });
 });
 
@@ -24,7 +28,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
 
 if (app.Environment.IsDevelopment())
 {
