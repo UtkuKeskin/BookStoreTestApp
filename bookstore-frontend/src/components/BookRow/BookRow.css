@@ -1,0 +1,24 @@
+.book-row {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.book-row:hover {
+    background-color: #f8f9fa;
+}
+
+.book-row td {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.book-row td:first-child {
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.book-details-row td {
+    padding: 0;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
