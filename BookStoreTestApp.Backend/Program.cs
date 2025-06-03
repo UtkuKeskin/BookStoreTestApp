@@ -16,8 +16,9 @@ builder.Services.AddCors(options =>
         {
             policy.WithOrigins(
                 "http://localhost:3000",
-                "https://bookstore-test-app.vercel.app", // Vercel domain'inizi ekleyin
-                "https://*.vercel.app" // Tüm Vercel preview deployments
+                "https://bookstore-test-app.vercel.app",
+                "https://bookstore-test-app-*.vercel.app",
+                "https://*.vercel.app"
             )
             .AllowAnyMethod()
             .AllowAnyHeader();
